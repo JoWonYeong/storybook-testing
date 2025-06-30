@@ -2,7 +2,13 @@
 name: 'Chromatic Deployment'
 
 # Event for the workflow
-on: push
+on:
+  push:
+    branches:
+      - main # ✅ main 브랜치에 push될 때 실행
+  pull_request:
+    branches:
+      - main # ✅ main 브랜치로 향하는 PR일 때 실행
 
 # List of jobs
 jobs:
