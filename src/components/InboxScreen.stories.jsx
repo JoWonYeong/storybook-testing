@@ -1,12 +1,12 @@
-// import InboxScreen from './InboxScreen';
+import InboxScreen from './InboxScreen';
 
-// import store from '../lib/store';
+import store from '../lib/store';
 
-// import { http, HttpResponse } from 'msw';
+import { http, HttpResponse } from 'msw';
 
-// import { MockedState } from './TaskList.stories';
+import { MockedState } from './TaskList.stories';
 
-// import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';
 
 // export default {
 //   component: InboxScreen,
@@ -40,16 +40,6 @@
 //     },
 //   },
 // };
-
-import InboxScreen from './InboxScreen';
-
-import store from '../lib/store';
-
-import { http, HttpResponse } from 'msw';
-
-import { MockedState } from './TaskList.stories';
-
-import { Provider } from 'react-redux';
 
 import {
   fireEvent,
