@@ -9,7 +9,7 @@ type Props = {
 export const Button = ({ children, variant = 'default' }: Props) => {
   const className =
     variant === 'primary'
-      ? 'background-color: blue; color: white; padding: 8px; border-radius: 4px;'
+      ? 'background-color: green; color: white; padding: 8px; border-radius: 4px;'
       : 'background-color: lightgray; color: black; padding: 8px; border-radius: 4px;';
 
   return <button style={{ ...styleFromString(className) }}>{children}</button>;
