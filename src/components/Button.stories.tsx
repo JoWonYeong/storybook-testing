@@ -29,7 +29,7 @@ export const Disabled: Story = {
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    const button = canvas.getByRole('button', { name: /disabled/i });
+    const button = canvas.getByRole('button', { name: /disableddisabled/i });
 
     // 버튼이 비활성화 상태인지 확인
     expect(button).toBeDisabled();
