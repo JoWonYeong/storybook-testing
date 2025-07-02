@@ -24,12 +24,12 @@ export const Default: Story = {
 
 export const Disabled: Story = {
   args: {
-    children: 'Disabled Button',
+    children: 'Disabled',
     disabled: true,
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    const button = canvas.getByRole('button', { name: /disabled button/i });
+    const button = canvas.getByRole('button', { name: /disabled/i });
 
     // 버튼이 비활성화 상태인지 확인
     expect(button).toBeDisabled();
