@@ -29,7 +29,9 @@ export const Disabled: Story = {
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    const button = canvas.getByRole('button', { name: /disableddisabled/i });
+    // 실패 케이스
+    // const button = canvas.getByRole('button', { name: /disableddisabled/i });
+    const button = canvas.getByRole('button', { name: /Disabled/i });
 
     // 버튼이 비활성화 상태인지 확인
     expect(button).toBeDisabled();
@@ -53,7 +55,6 @@ export const Clickable: Story = {
 
     await button.click();
 
-    // ✅ 클릭 이벤트 호출 확인
     expect(args.onClick).toHaveBeenCalledTimes(1);
   },
 };
